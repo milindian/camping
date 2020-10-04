@@ -6,10 +6,9 @@ The core script is outlined in this repo:
 https://github.com/banool/recreation-gov-campsite-checker
 
 This program will:
-* Identify all weekends in a certain date range. Default: from today's date until 6 months from today. 
-* For US holiday weekends, will select 3 consecutive night camping trip. For regular weekends, will select 2 consecutive night camping trip (this can be adjusted)
-* Hit the recreation.gov API endpoints for availability for a list of pre-defined recreation.gov camping sites
-* Output results and compare them to the previous run
+* Identify all weekends (and US holiday weekends) in a certain date range. Default: from today's date until 6 months from today. 
+* Hit the recreation.gov API endpoints for availability using valid dates for a list of pre-defined recreation.gov camping sites
+* Output results and compare them to the most recent previous run
 * If any changes are identified, a notification will be pushed via pushbullet with the new results
 * Executable script is an example. User can run this on a time interval using launchcontrol or similar. 
 
@@ -44,7 +43,8 @@ if Starting_Date in us_holidays or Ending_Date in us_holidays:
 ```
 /Users/saket/opt/anaconda3/envs/camping_env/bin/python3.8 /Users/saket/Downloads/recreation-gov-campsite-checker-master/weekends.py | /Users/saket/opt/anaconda3/envs/camping_env/bin/python3.8 /Users/saket/Downloads/recreation-gov-campsite-checker-master/pushcamp.py YOUR_PUSHBULLET_API_KEY
 ```
-* Note the weekends.py will automatically call the camping.py script and feed in all necessary variables. 
+* Note the weekends.py will automatically call the camping.py script and feed in all necessary variables. Results will be shown in terminal 
+* Note the pushcamp.py script will compare compare the most recent results (old_available.txt) with the newest results and then push the updated list (Master_Availability.txt) via Pushbullet and also update the old_available.txt file
 
 ## Bonus
 It can be helpful to package the terminal commands into an excutable shell command. An example is provided (callcamping.sh). Make appropriate edits as explained in the comments on that file. In order to create the executable file, you'll want to run this in the terminal: 
