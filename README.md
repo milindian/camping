@@ -29,7 +29,8 @@ start=str(datetime.date.today())
 end=str(datetime.date.today() + relativedelta(months=6))
 ```
 Valid days (0 is Monday, 6 is Sunday):
-```if ((start_date + datetime.timedelta(days=x)).isoweekday() >= 5 or (start_date + datetime.timedelta(days=x)).isoweekday() == 1)}
+```
+if ((start_date + datetime.timedelta(days=x)).isoweekday() >= 5 or (start_date + datetime.timedelta(days=x)).isoweekday() == 1)}
 ```
 Number of nights for regular weekends vs US holiday weekends: 
 ```
@@ -49,5 +50,7 @@ if Starting_Date in us_holidays or Ending_Date in us_holidays:
 ## Bonus
 It can be helpful to package the terminal commands into an excutable shell command. An example is provided (callcamping.sh). Make appropriate edits as explained in the comments on that file. In order to create the executable file, you'll want to run this in the terminal: 
 
-```chmod a+x PATH_TO_CALLCAMPING```
+```
+chmod a+x PATH_TO_CALLCAMPING
+```
 At this point, you can run this shell command on a regular time interval using launchcontrol, for example. 
