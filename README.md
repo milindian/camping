@@ -1,4 +1,4 @@
-# camping
+# callcamping
 Automated notifications for camping site(s) availability
 
 ## Description
