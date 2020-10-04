@@ -1,7 +1,7 @@
 # camping
 Automated notifications for camping site(s) availability
 
-#The core script is outlined in this repo:
+## The core script is outlined in this repo:
 https://github.com/banool/recreation-gov-campsite-checker
 
 This program will:
@@ -12,12 +12,12 @@ This program will:
 * If any changes are identified, a notification will be pushed via pushbullet with the new results
 * Executable script is an example. User can run this on a time interval using launchcontrol or similar. 
 
-#Pre-requisites
+## Pre-requisites
 In order to run this program, you will need:
 * Pushbullet API key
 * Recreation.gov park IDs (drop into the parks.txt file)
 
-#Usage
+## Usage
 * Install Conda and Python
 * Create a new virtual environment
 * Install packages in requirements.txt
@@ -45,7 +45,7 @@ if Starting_Date in us_holidays or Ending_Date in us_holidays:
 ```
 * Note the weekends.py will automatically call the camping.py script and feed in all necessary variables. 
 
-# Bonus
+## Bonus
 It can be helpful to package the terminal commands into an excutable shell command. An example is provided (callcamping.sh). Make appropriate edits as explained in the comments on that file. In order to create the executable file, you'll want to run this in the terminal: 
 
 ```chmod a+x PATH_TO_CALLCAMPING```
