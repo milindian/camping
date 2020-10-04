@@ -21,18 +21,20 @@ In order to run this program, you will need:
 * Install Conda and Python
 * Create a new virtual environment
 * Install packages in requirements.txt
-* Make any desired changes to weekends.py script. For example, the input date range:
+* Make any desired changes to weekends.py script. 
+
+*For example, the input date range:*
 ```
 # start=(sys.argv[1])
 start=str(datetime.date.today())
 # end=(sys.argv[2])
 end=str(datetime.date.today() + relativedelta(months=6))
 ```
-Valid days (0 is Monday, 6 is Sunday):
+*Valid days (0 is Monday, 6 is Sunday):*
 ```
 if ((start_date + datetime.timedelta(days=x)).isoweekday() >= 5 or (start_date + datetime.timedelta(days=x)).isoweekday() == 1)}
 ```
-Number of nights for regular weekends vs US holiday weekends: 
+*Number of nights for regular weekends vs US holiday weekends:*
 ```
 if Starting_Date in us_holidays or Ending_Date in us_holidays:
 			nights = 3
