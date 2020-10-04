@@ -1,7 +1,8 @@
 # camping
 Automated notifications for camping site(s) availability
 
-## The core script is outlined in this repo:
+## Description
+The core script is outlined in this repo:
 https://github.com/banool/recreation-gov-campsite-checker
 
 This program will:
