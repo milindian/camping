@@ -3,4 +3,4 @@ source /Users/saket/opt/anaconda3/etc/profile.d/conda.sh
 conda activate camping_env
 conda env list
 cd /Users/saket/Downloads/recreation-gov-campsite-checker-master
-/Users/saket/opt/anaconda3/envs/camping_env/bin/python3.8 /Users/saket/Downloads/recreation-gov-campsite-checker-master/weekends.py | /Users/saket/opt/anaconda3/envs/camping_env/bin/python3.8 /Users/saket/Downloads/recreation-gov-campsite-checker-master/pushcamp.py o.IMvBzjGxXxUFxqYkZGFUcIIDLPYTHaGJ
+/Users/saket/opt/anaconda3/envs/camping_env/bin/python3.8 /Users/saket/Downloads/recreation-gov-campsite-checker-master/weekends.py | /Users/saket/opt/anaconda3/envs/camping_env/bin/python3.8 /Users/saket/Downloads/recreation-gov-campsite-checker-master/pushcamp.py YOUR_API_KEY
